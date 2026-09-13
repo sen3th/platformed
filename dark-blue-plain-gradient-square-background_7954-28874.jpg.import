@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d27csyc1m28f1"
-path="res://.godot/imported/blue.jpg-95a9adc8486edd1c286e82cbd40d4bc8.ctex"
+uid="uid://dkbeybi1df1yg"
+path="res://.godot/imported/dark-blue-plain-gradient-square-background_7954-28874.jpg-882d0dbc0f073b427aae7c7176d043a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://blue.jpg"
-dest_files=["res://.godot/imported/blue.jpg-95a9adc8486edd1c286e82cbd40d4bc8.ctex"]
+source_file="res://dark-blue-plain-gradient-square-background_7954-28874.jpg"
+dest_files=["res://.godot/imported/dark-blue-plain-gradient-square-background_7954-28874.jpg-882d0dbc0f073b427aae7c7176d043a3.ctex"]
 
 [params]
 
