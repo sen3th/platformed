@@ -31,3 +31,5 @@ func _process(delta):
 
 func restart_game():
 	get_tree().reload_current_scene()
+	
+	

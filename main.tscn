@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dbe1hulkssus1" path="res://player.gd" id="1_h2yge"]
 [ext_resource type="Texture2D" uid="uid://bi5lw5qresttd" path="res://icon.svg" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://dkbeybi1df1yg" path="res://dark-blue-plain-gradient-square-background_7954-28874.jpg" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://c2n5jxhr613wa" path="res://light-green-background-3m1s3691d543m9xn.jpg" id="4_1bvp3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xx71g"]
 size = Vector2(27, 54)
@@ -3056,6 +3057,11 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_h2yge")
 
 [node name="Node" type="Node" unique_id=1851366834]
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=2081772685]
+position = Vector2(1246, 141.49994)
+scale = Vector2(1.53125, 1.3156251)
+texture = ExtResource("4_1bvp3")
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=1347321153]
 position = Vector2(70, 73)
