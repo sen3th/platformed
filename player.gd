@@ -1,5 +1,7 @@
 extends CharacterBody2D
+class_name Player
 
+var coins: int = 0
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -600.0
@@ -13,6 +15,10 @@ func _physics_process(delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		
+	if global_position.y > 500:
+		restart_game()
+		
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -32,4 +38,7 @@ func _process(delta):
 func restart_game():
 	get_tree().reload_current_scene()
 	
+func add_coins(amount: int) -> void:
+	coins += amount
+	print("Coins collected: ", coins)
 	
