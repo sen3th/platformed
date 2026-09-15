@@ -1,5 +1,4 @@
 extends CharacterBody2D
-class_name Player
 
 var coins: int = 0
 
@@ -38,7 +37,9 @@ func _process(delta):
 func restart_game():
 	get_tree().reload_current_scene()
 	
+@onready var coin_label: Label = $HUD/CoinLabel if has_node("HUD/CoinLabel") else $"../hud/CoinLabel"
+
 func add_coins(amount: int) -> void:
 	coins += amount
-	print("Coins collected: ", coins)
-	
+	if coin_label:
+		coin_label.text = "Coins: " + str(coins)

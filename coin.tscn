@@ -14,8 +14,9 @@ position = Vector2(31, -2.9999995)
 scale = Vector2(0.50000006, 0.4615385)
 texture = ExtResource("1_d5gmh")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=135697080]
-position = Vector2(0, -2.1666641)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=135697080]
+position = Vector2(31, -3.9999983)
+scale = Vector2(0.50000006, 0.4615385)
 shape = SubResource("CircleShape2D_qpsgh")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
